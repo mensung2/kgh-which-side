@@ -430,7 +430,7 @@ const scriptData = [
   {
     id: 527,
     title: "worker",
-    text: "",
+    text: " ",
     choices: [
       {
         text: "조나단 : 말이 켄터키의 중요한 자산이라고들 하잖아요. 당연히 좋아하죠!",
