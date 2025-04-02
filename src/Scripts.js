@@ -158,6 +158,8 @@ function Scripts({ initialId, setShowStory }) {
     if (isTypingDone) playHover();
   };
   const handleChoice = (nextId, choiceText) => {
+    if (!isTypingDone) return;
+
     playClick();
     setIsTypingDone(false);
 

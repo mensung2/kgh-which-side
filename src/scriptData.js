@@ -160,19 +160,25 @@ const scriptData = [
         text: "신시아 : 마을 외곽에 꽤 넓은 승마장을 가지고 있어요, 지금은 아들이 거길 관리하죠.",
         nextId: 125,
       },
-      { text: "신시아 : 그냥 치매 노인이에요.", nextId: 125 },
+      { text: "신시아 : 그냥 치매 노인이에요.", nextId: 1250 },
     ],
+  },
+  {
+    id: 1250,
+    title: "company",
+    text: "신시아 : 어쨌거나 말을 타고 갈 거예요. 끔찍한 이야기죠.",
+    choices: [{ text: "x", nextId: 125 }],
   },
   {
     id: 125,
     title: "company",
-    text: "신시아 : 어쨌거나 말을 타고 갈 거예요. 끔찍한 이야기죠.",
+    text: "당신 : 말을 별로 좋아하지 않나 봐요.",
     choices: [],
   },
   {
     id: 126,
     title: "company",
-    text: "당신 : 말을 별로 좋아하지 않나 봐요.",
+    text: " ",
     choices: [
       {
         text: "신시아 : 조교사의 손가락을 먹은 식인 말에 대한 이야기는 동네 개도 알아요.",
@@ -188,7 +194,7 @@ const scriptData = [
   {
     id: 127,
     title: "company",
-    text: "당신 : 말을 별로 좋아하지 않나 봐요.",
+    text: " ",
     choices: [
       {
         text: "신시아 : 당연하죠, 몇 주 전에 조교사가 말에게 손가락을 먹힌 사건이 있는걸요!",
@@ -390,19 +396,25 @@ const scriptData = [
         text: "조나단 : *질 좋은 허-브*를 파는 분이죠. 당신이라면 잘 알지 않아요? 아님 말고. 하하하.",
         nextId: 525,
       },
-      { text: "조나단 : 존경해 마지않는 제 고조 할아버지죠.", nextId: 525 },
+      { text: "조나단 : 존경해 마지않는 제 고조 할아버지죠.", nextId: 5250 },
     ],
+  },
+  {
+    id: 5250,
+    title: "worker",
+    text: "조나단 : 어쨌거나 말을 타고 갈 거에요, 벌써부터 신나지 않아요?",
+    choices: [{ text: "x", nextId: 525 }],
   },
   {
     id: 525,
     title: "worker",
-    text: "조나단 : 어쨌거나 말을 타고 갈 거에요, 벌써부터 신나지 않아요?",
+    text: "당신 : 말을 많이 좋아하나 봐요.",
     choices: [],
   },
   {
     id: 526,
     title: "worker",
-    text: "당신 : 말을 많이 좋아하나 봐요.",
+    text: " ",
     choices: [
       {
         text: "조나단 : 당연하죠, 담배나 석탄을 파느니 전 돈이 모이면 목장을 살 거에요.",
@@ -418,7 +430,7 @@ const scriptData = [
   {
     id: 527,
     title: "worker",
-    text: "당신 : 말을 많이 좋아하나 봐요.",
+    text: "",
     choices: [
       {
         text: "조나단 : 말이 켄터키의 중요한 자산이라고들 하잖아요. 당연히 좋아하죠!",

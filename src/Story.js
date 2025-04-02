@@ -32,13 +32,13 @@ function Story() {
       <style>
         {`
         .story-text {
-          font-size: 56px;
+          font-size: 48px;
           font-family: serif;
         }
 
         @media (max-width: 800px) {
           .story-text {
-            font-size: 36px;
+            font-size: 28px;
           }
         }
       `}
