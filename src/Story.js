@@ -28,7 +28,21 @@ function Story() {
 
   return (
     <div className="story-container" onClick={handleClick}>
-      <p style={{ fontSize: "56px", fontFamily: "serif" }} ref={textRef}></p>
+      <p className="story-text" ref={textRef}></p>
+      <style>
+        {`
+        .story-text {
+          font-size: 56px;
+          font-family: serif;
+        }
+
+        @media (max-width: 800px) {
+          .story-text {
+            font-size: 36px;
+          }
+        }
+      `}
+      </style>
     </div>
   );
 }

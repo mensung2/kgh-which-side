@@ -26,29 +26,29 @@ function Scripts({ initialId, setShowStory }) {
 
   useEffect(() => {
     if (history.length > 0 && history[history.length - 1].id === 125) {
-      const prevChoice = selectedChoices[106];
-      const nextSceneId = prevChoice === 107 ? 126 : 127;
+      setTimeout(() => {
+        const prevChoice = selectedChoices[106];
+        const nextSceneId = prevChoice === 107 ? 126 : 127;
 
-      const nextScene = scriptData.find((line) => line.id === nextSceneId);
-      if (nextScene) {
-        setTimeout(() => {
+        const nextScene = scriptData.find((line) => line.id === nextSceneId);
+        if (nextScene) {
           setHistory((prev) => [...prev, nextScene]);
-        }, 250);
-      }
+        }
+      }, 250);
     }
   }, [history, selectedChoices]);
 
   useEffect(() => {
     if (history.length > 0 && history[history.length - 1].id === 525) {
-      const prevChoice = selectedChoices[506];
-      const nextSceneId = prevChoice === 507 ? 526 : 527;
+      setTimeout(() => {
+        const prevChoice = selectedChoices[506];
+        const nextSceneId = prevChoice === 507 ? 526 : 527;
 
-      const nextScene = scriptData.find((line) => line.id === nextSceneId);
-      if (nextScene) {
-        setTimeout(() => {
+        const nextScene = scriptData.find((line) => line.id === nextSceneId);
+        if (nextScene) {
           setHistory((prev) => [...prev, nextScene]);
-        }, 250);
-      }
+        }
+      }, 250);
     }
   }, [history, selectedChoices]);
 

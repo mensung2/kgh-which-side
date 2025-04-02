@@ -4,9 +4,8 @@ body {
   font-family: sans-serif;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 760px) {
   body {
-    transform: rotate(-90deg);
     transform-origin: center center;
   }
 }
@@ -62,6 +61,15 @@ body {
   opacity: 0;
   animation: fadeIn 1.2s forwards;
   animation-delay: 0.5s;
+}
+
+@media (max-width: 760px) {
+  .side-on {
+    width: 27vw;
+    height: 80vh;
+    font-size: large;
+    gap: 4px;
+  }
 }
 
 @keyframes fadeIn {

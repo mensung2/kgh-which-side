@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Stage from "./Stage";
 import useSound from "use-sound";
@@ -9,6 +9,9 @@ function App() {
   const [hasEntered, setHasEntered] = useState(false);
   const [firstChoiceMade, setFirstChoiceMade] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
+  const [isPortrait, setIsPortrait] = useState(
+    window.innerHeight > window.innerWidth
+  );
 
   const [playOn] = useSound(StartSound, {
     volume: 0.5,
@@ -21,6 +24,32 @@ function App() {
     setHasEntered(true);
     playReel();
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPortrait(window.innerHeight > window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (isPortrait) {
+    return (
+      <div
+        className="rotate-message"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <p>가로 모드로 전환해 주세요</p>
+      </div>
+    );
+  }
 
   const handleChoice = (nextId, choiceMode = "single") => {
     setFirstChoiceMade(true);

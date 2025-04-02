@@ -26,7 +26,7 @@ function Jonathan() {
   }, []);
 
   return (
-    <div style={{ width: "330px", height: "500px" }}>
+    <div className="jonathan">
       <img
         src={currentImage}
         alt="Jonathan"
