@@ -226,7 +226,7 @@ const scriptData = [
     id: 131,
     title: "company",
     text: "신시아 : 마지막으로 한 가지만 여쭤볼게요.",
-    choices: [{ text: "x", nextId: 999 }],
+    choices: [{ text: "-✯-", nextId: 999 }],
   },
   {
     id: 500,
@@ -453,7 +453,7 @@ const scriptData = [
     id: 531,
     title: "worker",
     text: "조나단 : 마지막으로 한 가지만 물어볼게요.",
-    choices: [{ text: "x", nextId: 999 }],
+    choices: [{ text: "-✯-", nextId: 999 }],
   },
   {
     id: 999,

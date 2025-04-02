@@ -136,10 +136,12 @@ function Scripts({ initialId, setShowStory }) {
     const formattedChoices = choices
       .map(
         (choice) =>
-          `<p class="choice ${choice.text === ". . ." ? "center" : "left"}"
-    data-next-id="${choice.nextId}">
-  ${choice.text}
-</p>`
+          `<p class="choice ${
+            [". . .", "-✯-"].includes(choice.text) ? "center" : "left"
+          }" 
+          data-next-id="${choice.nextId}">
+        ${choice.text}
+      </p>`
       )
       .join("");
 
